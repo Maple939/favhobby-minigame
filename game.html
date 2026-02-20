@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby - Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico:400|Nunito:700|Poppins:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="crochet-banner"></div>
+    <nav class="navbar">
+        <div class="brand">My Favorite Hobby</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="crochet.html">Crochet</a></li>
+            <li><a href="series.html">Movies/Series</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="game.html" class="active">Game</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Mini-Game</h1>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <h1> Memory Match</h1>
+            <p style="color: #666; margin-top: 5px;">Find all matching pairs!</p>
+        </div>
+
+        <div class="difficulty-selector">
+            <label>
+                <input type="radio" name="difficulty" value="easy" checked>
+                Easy (4x4)
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="hard">
+                Hard (6x4)
+            </label>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <label>Moves</label>
+                <div class="value" id="moves">0</div>
+            </div>
+            <div class="stat-box">
+                <label>Matches</label>
+                <div class="value" id="matches">0</div>
+            </div>
+            <div class="stat-box">
+                <label>Time</label>
+                <div class="value" id="timer">0s</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-start" id="startBtn">Start Game</button>
+            <button class="btn-reset" id="resetBtn">Reset</button>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Favorite Hobby. All rights reserved.</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
